@@ -2,10 +2,11 @@
   "name": "backend-api-1",
   "version": "1.0.0",
   "description": "test for devcrew",
-  "main": "index.js",
-    "scripts": {
-    "start:ts": "npx ts-node src/app.ts",
-    "start": "node dist/app.js",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:ts": "npx ts-node src/index.ts",
+    "start": "node dist/index.js",
     "build": "npx tsc"
   },
   "author": "khunanon",

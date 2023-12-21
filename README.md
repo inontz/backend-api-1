@@ -1,18 +1,33 @@
-This is a Next.js project bootstrapped with create-next-app.
+# backend-api-1
 
-Getting Started
+## First, install package dependencies
 
-First, run the development server:
+ ```bash
+ npm install
+ ```
 
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-Open http://localhost:3000 with your browser to see the result.
+## Build app
 
-You can start editing the page by modifying app/page.tsx. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses next/font to automatically optimize and load Inter, a custom Google Font.
+## Start api server
+
+```bash
+npm run start
+```
+
+or
+
+```bash
+npm start
+```
+
+## For develop (No nee to build app)
+```bash
+npm run start:ts
+```
+
+## Route
+- http://localhost:3000/app (require: headers 'Authorization', 'Content-Type', 'json body')
