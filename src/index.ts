@@ -24,7 +24,7 @@ app.post("/app", body('a').isInt(), body('b').isInt(), (req: Request<Payload>, r
     }
     else {
 
-        if (!req.body['a'] || !req.body['b']) {
+        if (!req.body['a'] || !req.body['b'] || typeof req.body['a'] != 'number' || typeof req.body['b'] != 'number') {
             res.status(422).send({ error: "Unsupported data format" })
         }
         else {
